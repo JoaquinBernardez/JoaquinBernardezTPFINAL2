@@ -1,0 +1,19 @@
+{
+  "name": "proyectofinal2parte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaquinBernardez/JoaquinBernardezTPFINAL2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaquinBernardez/JoaquinBernardezTPFINAL2/issues"
+  },
+  "homepage": "https://github.com/JoaquinBernardez/JoaquinBernardezTPFINAL2#readme"
+}
