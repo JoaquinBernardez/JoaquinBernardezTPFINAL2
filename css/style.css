@@ -1,17 +1,17 @@
 header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  grid-area: header;
 }
 
 .navbar {
-  width: 80%;
+  width: 100%;
+  height: 5rem;
   margin: auto;
   padding: 5px 0;
   text-align: center;
   justify-content: space-between;
   background-color: black;
-  grid-area: navbar;
+  position: fixed;
 }
 
 .navbar ul li {
@@ -26,7 +26,7 @@ header {
   text-decoration: none;
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -45,81 +45,40 @@ header {
   width: 100%;
 }
 
-.info {
-  font-size: 1.5rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  grid-area: info;
+.container-img {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px;
 }
 
-main {
-  font-size: 1.5rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  grid-area: main;
+.container-img .box-img figure {
+  width: 100%;
+  height: 100%;
 }
 
-.imgtamis {
-  position: relative;
-  text-align: center;
+.container-img .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-aside {
-  font-size: 1.5rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  grid-area: aside;
+.container-img .box-img:nth-child(1) {
+  grid-column-start: span 2;
 }
 
-.imgabogado {
-  position: relative;
-  text-align: center;
-}
-
-.abogado {
-  height: 357px;
-}
-
-footer {
-  font-size: 1.3rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-decoration: none;
-  text-align: center;
-  grid-area: footer;
-  background-color: black;
-  color: white;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
+.container-img .box-img:nth-child(4) {
+  grid-row-start: span 2;
 }
 
 body {
   background-color: lightgray;
-}
-
-.grid-container {
-  display: grid;
-  gap: 15px;
-  grid-template-areas: "header" "navbar" "info" "main" "aside" "footer";
-}
-@media (min-width: 600px) {
-  .grid-container {
-    grid-template: "header header" 100px "navbar navbar" 200px "info   info" auto "main   aside" auto "footer footer" 100px/auto;
-  }
-}
-@media (min-width: 900px) {
-  .grid-container {
-    grid-template: "header header header" 100px "navbar navbar navbar" 100px "info    info   info" 300px "main   main   aside" auto "footer footer footer" 100px/auto;
-  }
-}
-@media (min-width: 600px) {
-  .grid-container {
-    grid-template: "header header" 100px "navbar navbar" 200px "main aside" auto "footer footer" 100px/auto;
-  }
-}
-@media (min-width: 900px) {
-  .grid-container {
-    grid-template: "header header header" 100px "navbar navbar navbar" 200px "main main aside" auto "footer footer footer" 100px/auto;
-  }
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */
