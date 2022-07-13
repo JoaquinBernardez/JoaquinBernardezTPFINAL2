@@ -8,19 +8,23 @@
     <title>Jcompany</title>
 </head>
 <body class="grid-container">
-    <header class="header">
-        <h1>
-        Pro MousePads
-        </h1>
-    </header>
 
+    <!--Navbar-->
     <nav class="navbar">
         <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#galeria">Galeria</a></li>
             <li><a href="#services">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
+
+    <!--Header-->
+    <header class="header">
+        <h1>
+        Pro MousePads
+        </h1>
+    </header>
     
     <!--Galeria-->
         <div id="galeria" class="container-img">
@@ -74,6 +78,33 @@
                 </a>
             </div>
         </div>
+
+
+    <!--Contacto-->
+    <section id="contacto" class="contact__section">
+        <h2 class="contact__title">Contacto</h2>
+        <form class="contact__form" action="">
+          <input
+            id="name"
+            class="contact__input"
+            type="text"
+            placeholder="Nombre"
+          />
+          <input class="contact__input2" type="email" placeholder="E-mail" />
+          <textarea
+            class="contact__textarea"
+            cols="30"
+            rows="10"
+            placeholder="Escriba aquí su mensaje..."
+          ></textarea>
+          <button
+            type="button"
+            class="btn btn-secondary bg-dark p-3 m-auto mb-2 w-50"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Enviar
+          </button>
 
 </body>
 </html>

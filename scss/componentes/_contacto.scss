@@ -1,0 +1,61 @@
+/* Mixin */
+@mixin mixin-contacto (
+    $bg-color
+)
+{
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin: 1.25rem 0;
+    outline: none;
+    font-size: 1.1em;
+    &:focus {
+        background-color: $bg-color;
+        transition: background-color 0.5s ease;
+      }
+}
+    
+.contact__section {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .contact__title {
+      font-weight: 700;
+      font-size: 2em;
+      margin: 1.3rem auto;
+    }
+
+    .contact__form {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+
+      @media (max-width: 768px) {
+          width: 80%;
+      }
+
+      .contact__input {
+        @include mixin-contacto(#aaa);
+      }
+      .contact__input2 {
+        @include mixin-contacto(#333);
+      }
+
+      .contact__textarea {
+        border: none;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 1rem;
+        resize: none;
+        outline: none;
+        font-size: 1.1em;
+
+        &:focus {
+          background-color: lightgray;
+          transition: background-color 0.5s ease;
+        }
+      }
+    }  
+  }

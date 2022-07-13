@@ -1,10 +1,14 @@
 @import './componentes/header';
 @import './componentes/navbar';
 @import './componentes/galeria';
+@import './componentes/contacto';
+
 
 body{
     background-color:lightgray;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 
