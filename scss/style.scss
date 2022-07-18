@@ -1,14 +1,34 @@
 @import './componentes/header';
-@import './componentes/navbar';
 @import './componentes/galeria';
 @import './componentes/contacto';
+@import './componentes/footer';
+@import './componentes/inicio';
+@import './componentes/nosotros';
+@import './componentes/servicios';
 
 
-body{
-    background-color:lightgray;
+/* ========== SCROLL BAR ========== */
+  
+::-webkit-scrollbar {
+    background-color: var(--white);
+    width: 0.7rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+  }
+  
+  /* ========== SCROLL BAR Final ==========  */
+
+html {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
     scroll-behavior: smooth;
+  }
+
+body {
     margin: 0;
-    padding: 0;
-}
+    background: rgb(196, 195, 195);
+  }
 
 

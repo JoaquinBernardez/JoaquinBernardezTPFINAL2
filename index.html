@@ -1,44 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <title>JCOMPANY</title>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Jcompany</title>
-</head>
-<body class="grid-container">
-
-    <!--Navbar-->
-    <nav class="navbar">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="main_header">
+      <a class="link__logo" href="#home">
+        <div class="container_logo">
+          <h1 id="titulo" class="titulo">Pro MousePads</h1>
+        </div>
+      </a>
+      <nav class="nav">
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#galeria">Galeria</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+          <a id="nav_link--1" href="#inicio" class="nav_link">Inicio</a>
+          <a id="nav_link--2" href="#galeria" class="nav_link">Galeria</a>
+          <a id="nav_link--2" href="#nosotros" class="nav_link">Nosotros</a>
+          <a id="nav_link--2" href="#contacto" class="nav_link">Contacto </a>
+          <a id="nav_link--2" href="#servicios" class="nav_link">Servicios </a>
         </ul>
-    </nav>
-
-    <!--Header-->
-    <header class="header">
-        <h1>
-        Pro MousePads
-        </h1>
+      </nav>
     </header>
+    <!-- Fin de HEADER -->
+
+    <!-- =============== HOME =============== -->
+
+    <section id="inicio" class="body_section">
+        <div class="body_container">
+          <img src="./images/fondo.jpg" alt="" class="body_img" />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+          laboriosam, deleniti illo praesentium a eos beatae nam? Qui, quisquam
+          consequatur debitis.
+        </div>
+      </section>
+    <!-- Fin de HOME -->  
     
-    <!--Galeria-->
+    <!--GALERIA-->
+
         <div id="galeria" class="container-img">
             <div class="box-img">
                 <a href="#">
                     <figure>
-                        <img src="./images/pad1.webp" alt="img-galeria">
+                        <img src="./images/pad2.webp" alt="img-galeria">
                     </figure>
                 </a>
             </div>
             <div class="box-img">
                 <a href="#">
                     <figure>
-                        <img src="./images/pad2.webp" alt="img-galeria">
+                        <img src="./images/pad1.webp" alt="img-galeria">
                     </figure>
                 </a>
             </div>
@@ -78,33 +96,151 @@
                 </a>
             </div>
         </div>
+      <!-- Fin de GALERIA --> 
+
+      <!-- Servicios -->
+
+      <div id="servicios" class="title">
+        <h2 class="h2s">Servicios</h2>
+      </div>
+
+      <div class="services">
+        <div class="card">
+          <h2>Desarrollo Web</h2>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum asperiores accusamus mollitia quos et? Fuga saepe itaque, debitis tempore ab quam a aspernatur modi optio nam accusamus et, error labore.</p>
+              <a class="button" href="#">Lee mas</a>
 
 
-    <!--Contacto-->
-    <section id="contacto" class="contact__section">
-        <h2 class="contact__title">Contacto</h2>
-        <form class="contact__form" action="">
-          <input
-            id="name"
-            class="contact__input"
-            type="text"
-            placeholder="Nombre"
-          />
-          <input class="contact__input2" type="email" placeholder="E-mail" />
-          <textarea
-            class="contact__textarea"
-            cols="30"
-            rows="10"
-            placeholder="Escriba aquí su mensaje..."
-          ></textarea>
-          <button
-            type="button"
-            class="btn btn-secondary bg-dark p-3 m-auto mb-2 w-50"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            Enviar
-          </button>
+          </div>
+        </div>
 
+        <div class="card">
+          <h2>Diseño Grafico</h2>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum asperiores accusamus mollitia quos et? Fuga saepe itaque, debitis tempore ab quam a aspernatur modi optio nam accusamus et, error labore.</p>
+              <a class="button" href="#">Lee mas</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Diseña tu pad</h2>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum asperiores accusamus mollitia quos et? Fuga saepe itaque, debitis tempore ab quam a aspernatur modi optio nam accusamus et, error labore.</p>
+              <a class="button" href="#">Lee mas</a>
+
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Fin de Servicios -->
+      
+      <!-- NOSOTROS -->
+      <div id="nosotros" class="wrapper">
+        <h2 class="h2n">Nuestro Equipo</h2>
+        <div class="our_team">
+            <div class="team_member">
+              <div class="member_img">
+                 <img src="./images/team-1.jpg" alt="our_team">
+                <div class="social_media">
+                   <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                   <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                 </div>
+              </div>
+              <h3>Joaquin Bernardez</h3>
+              <span>CEO</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem voluptatibus cumque.</p>
+            </div>
+            <div class="team_member">
+               <div class="member_img">
+                 <img src="./images/team-2.jpg" alt="our_team">
+                 <div class="social_media">
+                   <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                   <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                 </div>
+              </div>
+              <h3>Laura Cricket</h3>
+              <span>Administradora</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores maiores temporibus, architecto optio asperiores mollitia pariatur error, quaerat voluptatibus minima eos quo nostrum, maxime necessitatibus.</p>
+          </div>
+            <div class="team_member">
+               <div class="member_img">
+                 <img src="./images/team-3.jpg" alt="our_team">
+                 <div class="social_media">
+                   <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                   <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                 </div>
+              </div>
+              <h3>Manu River</h3>
+              <span>Manager</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem voluptatibus cumque.</p>
+          </div>
+            <div class="team_member">
+               <div class="member_img">
+                 <img src="./images/team-4.jpg" alt="our_team">
+                 <div class="social_media">
+                   <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                   <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                 </div>
+              </div>
+              <h3>Cristian Yuls</h3>
+              <span>Ayudante</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem voluptatibus cumque.</p>
+          </div>  
+        </div>
+    </div>	
+    <!-- Fin de NOSOTROS -->
+
+        <!-- =============== CONTACTO =============== -->
+
+        <section id="contacto" class="body__section--contacto">
+            <form method="post" action="formulario.php" class="body_form">
+              <h2 class="form_titulo">Contacto</h2>
+              <hr />
+              <input
+                type="text"
+                class="input input-nombre"
+                name="name"
+                placeholder="Nombre"
+                autocomplete="off"
+              />
+              <input
+                type="email"
+                class="input input-email"
+                name="email"
+                placeholder="Email"
+                autocomplete="off"
+              />
+              <textarea
+                cols="30"
+                rows="10"
+                class="input input-text_area"
+                name="text"
+                placeholder="Escriba aquí su mensaje..."
+              ></textarea>
+              <button class="input input-button">Enviar</button>
+            </form>
+          </section>
+      
+        <!-- =============== CONTACTO FINAL=============== -->   
+        
+      
+      <!-- Footer -->
+
+        <footer class="main_footer">
+          <section class="footer_section">
+            <a href="#inicio" class="footer_link">Ir arriba</a>
+          </section>
+          <p class="copyright">Copyright &copy; 2022</p>
+        </footer>
+
+      <!-- Fin de FOOTER -->
+
+        
 </body>
 </html>

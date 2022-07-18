@@ -1,0 +1,36 @@
+/* ========== MAIN FOOTER ========== */
+  
+.main_footer {
+    background-color: #000;
+    padding: 2rem;
+    color: var(--white);
+  }
+  
+  .footer_section {
+    float: right;
+  }
+  
+  .copyright {
+    margin: 0;
+    text-align: center;
+    display: inline;
+  }
+  
+  .footer_link {
+    transition: color 0.3s ease;
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.7rem;
+  }
+  
+  .footer_link:hover {
+    color: var(--lightblue);
+  }
+  
+  @media (min-width: 550px) {
+    .copyright {
+      text-align: left;
+    }
+  }
+  
+  /* ========== MAIN FOOTER END ========== */

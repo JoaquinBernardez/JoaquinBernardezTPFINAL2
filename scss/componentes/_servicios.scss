@@ -1,0 +1,118 @@
+.h2s{
+    margin: 0;
+    padding-top: 1rem;
+    font-family: 'Yatra One', cursive;
+    font-size: 48px;
+    color: black;
+}
+.title {
+    color: #444;
+    font-family: 'Raleway';
+    font-size: 1.5em;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: rgb(105, 143, 155);
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background-color: rgb(105, 143, 155);
+    @media (max-width: 768px){
+    flex-direction: column;
+    }
+
+    .card{
+        height: 350px;
+        width: 300px;
+        padding: 0 35px 20px;
+        border-radius: 10px;
+        background: #dff9fb;
+        margin: 10px;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s cubic-bezier(0.02,0.01,0.47.1);
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+        &:hover{
+            color: #fff;
+            border: none;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        &:hover::before,
+        &:hover::after{
+        opacity: 0.15;
+        }
+        &:hover::before{
+        transform: translate3d(50%,0,0) scale(0.9);
+        }
+        &:hover::after{
+        transform: translate(50%,0) scale(1.1);
+        }
+
+        &::before,
+        &::after{
+        content: '';
+        background: #22a6b3;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        bottom: -80px;
+        z-index: -1;
+        transform: translate(100%, -25%) translate3d(0,0,0);
+        transition: all 0.15s cubic-bezier(0.02,0.01,0.47,1);
+    }
+
+        h2{
+            font-family: 'Raleway';
+            text-align: center;
+            color: #22a6b3;
+            font-size: 22px;
+        }
+        .button {
+            background: #22a6b3;
+            color: #c7ecee;
+            border: none;
+            border-radius: 5px;
+            width: 120px;
+            padding: 15px;
+            display: inline-block;
+            font-family: 'Raleway';
+            font-size: 16px;
+            align-content: center;
+            margin: 5rem auto 0;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+
+            p{
+                font-size: 12px;
+                color: #535c68;
+                line-height: 20px;
+            }
+        }
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,61 +1,65 @@
-/* Mixin */
-@mixin mixin-contacto (
-    $bg-color
-)
-{
-    height: 2rem;
-    border: none;
-    border-bottom: 1px solid lightgray;
-    margin: 1.25rem 0;
-    outline: none;
-    font-size: 1.1em;
-    &:focus {
-        background-color: $bg-color;
-        transition: background-color 0.5s ease;
-      }
+/* ========== FORM ========== */
+  
+.body__section--contacto {
+  background-color: var(--contact-color);
+  display: flex;
+  width: 100%;
+  height: 600px;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
 }
-    
-.contact__section {
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
-    .contact__title {
-      font-weight: 700;
-      font-size: 2em;
-      margin: 1.3rem auto;
-    }
+.body_form {
+  background-color: rgba(240, 240, 240, 0.792);
+  height: 66%;
+  border-radius: 5px;
+  min-width: 40%;
+}
 
-    .contact__form {
-      display: flex;
-      flex-direction: column;
-      width: 70%;
+hr {
+  border: rgb(192, 192, 193) 1px solid;
+}
 
-      @media (max-width: 768px) {
-          width: 80%;
-      }
+.input {
+  padding: 0.4rem;
+  margin: 0.8em;
+  display: flex;
+  border-radius: 6px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
 
-      .contact__input {
-        @include mixin-contacto(#aaa);
-      }
-      .contact__input2 {
-        @include mixin-contacto(#333);
-      }
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--lightblue);
+}
 
-      .contact__textarea {
-        border: none;
-        border-bottom: 1px solid lightgray;
-        margin-bottom: 1rem;
-        resize: none;
-        outline: none;
-        font-size: 1.1em;
+.input-text_area {
+  resize: none;
+  box-sizing: border-box;
+  min-width: inherit;
+  width: 95%;
+  margin: auto;
+}
 
-        &:focus {
-          background-color: lightgray;
-          transition: background-color 0.5s ease;
-        }
-      }
-    }  
-  }
+.form_titulo {
+  text-align: center;
+}
+
+.input-button {
+  display: flex;
+  width: 7rem;
+  justify-content: center;
+  background-color: var(--lightblue);
+  cursor: pointer;
+  margin: 0.8rem auto;
+  padding: 0.7rem;
+  font-weight: 700;
+}
+
+.input-button:hover {
+  color: #eee;
+}
+
+/* ========== FORM END ========== */
