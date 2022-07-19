@@ -38,10 +38,10 @@
       }
 
       .contact__input {
-        @include mixin-contacto(#aaa);
+        @include mixin-contacto(rgb(153, 8, 8));
       }
       .contact__input2 {
-        @include mixin-contacto(#333);
+        @include mixin-contacto ( rgb(105, 143, 155))
       }
 
       .contact__textarea {
