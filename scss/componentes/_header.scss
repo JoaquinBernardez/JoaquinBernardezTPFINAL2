@@ -1,7 +1,3 @@
-
-
-/* ========== MAIN HEADER ========== */
-
 .main_header {
   background-color: var(--white);
   position: fixed;
@@ -13,29 +9,19 @@
   background-color: #888;
   z-index: 1000;
 
-  .titulo {
-    display: inherit;
-    font-size: 1.7rem;
-    color: var(--black);
-  }
-  
   .link__logo {
     text-decoration: none;
+    .container_logo {
+      display: inline-flex;
+      align-items: center;
+      .titulo {
+        display: inherit;
+        font-size: 1.7rem;
+        color: var(--black);
+      }
+    }
   }
-  
-  .container_logo {
-    display: inline-flex;
-    align-items: center;
-  }
-
 }
-
-
-
-
-
-/* ========== NAV ========== */
-
 .menu__a-hover {
 
   &:hover {
@@ -43,17 +29,9 @@
     transition: background-color 0.7s ease;
   }
 }
-  
   .menu__a-focus {
-
     &:focus {
       transform: translateY(3px);
     }
   }
 
-  .font-cormorant {
-    font-family: 'Cormorant SC', serif;
-  }
-/* ========== NAV END ========== */
-
-/* ========== MAIN HEADER END ========== */
