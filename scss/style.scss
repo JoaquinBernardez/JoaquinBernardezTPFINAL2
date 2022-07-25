@@ -19,10 +19,11 @@
   
   /* ========== SCROLL BAR Final ==========  */
 
-html {
+* {
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
 body {

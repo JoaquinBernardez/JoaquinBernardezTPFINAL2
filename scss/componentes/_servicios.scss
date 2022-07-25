@@ -31,10 +31,10 @@
         margin: 10px;
         overflow: hidden;
         position: relative;
-        transition: all 0.3s cubic-bezier(0.02,0.01,0.47.1);
         display: flex;
         flex-direction: column;
         align-content: center;
+        box-shadow: 0 0 10px transparent;
         
         &:hover{
             color: #fff;
@@ -42,37 +42,13 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
         }
 
-        &:hover::before,
-        &:hover::after{
-        opacity: 0.15;
-        }
-        &:hover::before{
-        transform: translate3d(50%,0,0) scale(0.9);
-        }
-        &:hover::after{
-        transform: translate(50%,0) scale(1.1);
-        }
-
-        &::before,
-        &::after{
-        content: '';
-        background: #22a6b3;
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        position: absolute;
-        right: 0;
-        bottom: -80px;
-        z-index: -1;
-        transform: translate(100%, -25%) translate3d(0,0,0);
-        transition: all 0.15s cubic-bezier(0.02,0.01,0.47,1);
-    }
 
         h2{
             font-family: 'Raleway';
+            padding: 1rem 0;
             text-align: center;
             color: #22a6b3;
-            font-size: 22px;
+            font-size: 1.8em;
         }
         .button {
             background: #22a6b3;
@@ -95,10 +71,9 @@
             display: flex;
             flex-direction: column;
 
-            p{
-                font-size: 12px;
+            .content-p{
+                font-size: 1.1em;
                 color: #535c68;
-                line-height: 20px;
             }
         }
     
