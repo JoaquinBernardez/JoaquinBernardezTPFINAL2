@@ -16,6 +16,7 @@ $imagenproporcion: (
 }
 
 .container-img {
+    overflow-y: hidden;
     @extend %extend-img;
     .box-img figure {
         width: map-get($imagenproporcion, width);

@@ -1,9 +1,15 @@
-/* ========== MAIN FOOTER ========== */
-  
 .main_footer {
-    background-color: #444;
+    background-color: #6c757d;
     padding: 2rem;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    .link{
+      img{
+        width: 30px;
+
+      }
+    }
     .footer_section {
       float: right;
       .footer_link {
@@ -25,3 +31,5 @@
         }
       }
     }
+
+

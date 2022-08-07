@@ -17,7 +17,7 @@
     
 .contact__section {
     margin-top: 3.5rem;
-    background: rgb(105, 143, 155);
+    background-color: rgb(65, 65, 65);
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -25,10 +25,12 @@
     flex-direction: column;
 
     .contact__title {
+      text-align: center;
+      padding-top: 2rem;
+      font-size: 50px;
+      margin-bottom: 2rem;
       font-weight: 700;
-      font-family: 'Yatra One', cursive;
-      font-size: 2em;
-      margin: 1.3rem auto;
+        color: deepskyblue
     }
 
     .contact__form {
@@ -41,10 +43,10 @@
       }
 
       .contact__input {
-        @include mixin-contacto(rgb(153, 8, 8));
+        @include mixin-contacto(#aaa);
       }
       .contact__input2 {
-        @include mixin-contacto ( rgb(155, 152, 105))
+        @include mixin-contacto ( (#aaa))
       }
 
       .contact__textarea {

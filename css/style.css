@@ -44,6 +44,9 @@
   grid-gap: 20px;
 }
 
+.container-img {
+  overflow-y: hidden;
+}
 .container-img .box-img figure {
   width: 100%;
   height: 100%;
@@ -63,7 +66,7 @@
 /* Mixin */
 .contact__section {
   margin-top: 3.5rem;
-  background: rgb(105, 143, 155);
+  background-color: rgb(65, 65, 65);
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -71,10 +74,12 @@
   flex-direction: column;
 }
 .contact__section .contact__title {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 50px;
+  margin-bottom: 2rem;
   font-weight: 700;
-  font-family: "Yatra One", cursive;
-  font-size: 2em;
-  margin: 1.3rem auto;
+  color: deepskyblue;
 }
 .contact__section .contact__form {
   display: flex;
@@ -95,7 +100,7 @@
   font-size: 1.1em;
 }
 .contact__section .contact__form .contact__input:focus {
-  background-color: rgb(153, 8, 8);
+  background-color: #aaa;
   transition: background-color 0.5s ease;
 }
 .contact__section .contact__form .contact__input2 {
@@ -107,7 +112,7 @@
   font-size: 1.1em;
 }
 .contact__section .contact__form .contact__input2:focus {
-  background-color: rgb(155, 152, 105);
+  background-color: #aaa;
   transition: background-color 0.5s ease;
 }
 .contact__section .contact__form .contact__textarea {
@@ -123,11 +128,15 @@
   transition: background-color 0.5s ease;
 }
 
-/* ========== MAIN FOOTER ========== */
 .main_footer {
-  background-color: #444;
+  background-color: #6c757d;
   padding: 2rem;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.main_footer .link img {
+  width: 30px;
 }
 .main_footer .footer_section {
   float: right;
@@ -153,7 +162,7 @@
 }
 
 .body_section {
-  height: 80vh;
+  height: 100vh;
   margin-top: 6rem;
   display: flex;
   justify-content: center;
@@ -212,7 +221,7 @@
 .wrapper {
   margin-top: 60px;
   text-align: center;
-  background-color: rgb(105, 143, 155);
+  background-color: rgb(65, 65, 65);
 }
 .wrapper .our_team {
   padding-bottom: 2rem;
@@ -282,92 +291,60 @@
   height: 100%;
 }
 .wrapper .h2n {
-  font-family: "Yatra One", cursive;
-  font-size: 2em;
-  font-weight: 700;
-  color: rgb(0, 0, 0);
-  margin: 0;
-  padding: 2rem;
-}
-
-.h2s {
-  margin: 0;
-  padding-top: 1rem;
-  font-family: "Yatra One", cursive;
-  font-weight: 700;
-  font-size: 2em;
-  color: black;
-}
-
-.title {
-  color: #444;
-  width: 100%;
-  margin: 0 auto;
   text-align: center;
-  background: rgb(105, 143, 155);
+  padding-top: 2rem;
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 80px;
+  font-weight: 700;
+}
+.wrapper .h2n .equipo {
+  color: deepskyblue;
 }
 
-.services {
+.container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 500px;
-  background-color: rgb(105, 143, 155);
+  flex-direction: column;
+}
+.container .header {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 80px;
+  font-weight: 700;
+  justify-self: center;
+}
+.container .header span {
+  color: deepskyblue;
 }
 @media (max-width: 768px) {
-  .services {
+  .container .row {
+    display: flex;
     flex-direction: column;
+    margin: 1rem 0;
+    overflow-y: hidden;
   }
 }
-.services .card {
-  height: 350px;
-  width: 300px;
-  padding: 0 35px 20px;
-  border-radius: 10px;
-  background: #dff9fb;
-  margin: 10px;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  box-shadow: 0 0 10px transparent;
-}
-.services .card:hover {
+.container .single-service {
+  background-color: rgb(65, 65, 65);
   color: #fff;
-  border: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-.services .card h2 {
-  font-family: "Raleway";
-  padding: 1rem 0;
-  text-align: center;
-  color: #22a6b3;
-  font-size: 1.8em;
-}
-.services .card .button {
-  background: #22a6b3;
-  color: #c7ecee;
-  border: none;
-  border-radius: 5px;
-  width: 120px;
-  padding: 15px;
-  display: inline-block;
-  font-family: "Raleway";
-  font-size: 16px;
-  align-content: center;
-  margin: 5rem auto 0;
-}
-.services .card a {
-  text-decoration: none;
-}
-.services .card .content {
+  padding: 25px;
+  transition: all 0.5s ease;
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  margin: 1rem 0;
 }
-.services .card .content .content-p {
-  font-size: 1.1em;
-  color: #535c68;
+.container .single-service h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.container .single-service i {
+  font-size: 60px;
+}
+.container .single-service:hover {
+  background: radial-gradient(circle, #00ccff, #0190f9);
+  color: #fff;
 }
 
 /* ========== SCROLL BAR ========== */

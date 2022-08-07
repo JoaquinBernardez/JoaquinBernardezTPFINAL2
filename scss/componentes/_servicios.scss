@@ -1,91 +1,51 @@
-.h2s{
-    margin: 0;
-    padding-top: 1rem;
-    font-family: 'Yatra One', cursive;
-    font-weight: 700;
-    font-size: 2em;
-    color: black;
-}
-.title {
-    color: #444;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    background: rgb(105, 143, 155);
-}
-.services{
+.container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    background-color: rgb(105, 143, 155);
-    @media (max-width: 768px){
     flex-direction: column;
+
+.header {
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 80px;
+	font-weight: 700;
+    justify-self: center;
+
+    span {
+        color: deepskyblue;
     }
-    .card{
-        height: 350px;
-        width: 300px;
-        padding: 0 35px 20px;
-        border-radius: 10px;
-        background: #dff9fb;
-        margin: 10px;
-        overflow: hidden;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        box-shadow: 0 0 10px transparent;
-        
-        &:hover{
-            color: #fff;
-            border: none;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
-        }
-
-
-        h2{
-            font-family: 'Raleway';
-            padding: 1rem 0;
-            text-align: center;
-            color: #22a6b3;
-            font-size: 1.8em;
-        }
-        .button {
-            background: #22a6b3;
-            color: #c7ecee;
-            border: none;
-            border-radius: 5px;
-            width: 120px;
-            padding: 15px;
-            display: inline-block;
-            font-family: 'Raleway';
-            font-size: 16px;
-            align-content: center;
-            margin: 5rem auto 0;
-        }
-        a{
-            text-decoration: none;
-        }
-
-        .content{
-            display: flex;
-            flex-direction: column;
-
-            .content-p{
-                font-size: 1.1em;
-                color: #535c68;
-            }
-        }
+}
+.row{
+    @media (max-width:768px) {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    overflow-y: hidden;
+    }
+}
+.single-service {
+    background-color: rgb(65, 65, 65);
+    color: #fff;
+	padding: 25px;
+	transition: all .5s ease;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0;
     
+
+    h2 {
+        font-size: 25px;
+        font-weight: 500;
     }
 
+    i {
+        font-size: 60px;
+    }
+
+    &:hover {
+        background: radial-gradient(circle, #00ccff, #0190f9);
+        color: #fff;
+    }
 }
 
-
-
-
-
-
-
-
-
+}
