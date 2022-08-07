@@ -25,7 +25,9 @@
 .single-service {
     background-color: rgb(65, 65, 65);
     color: #fff;
-	padding: 25px;
+	padding-inline: 25px;
+    min-height: 380px;
+    height: fit-content;
 	transition: all .5s ease;
     display: flex;
     justify-content: center;
